@@ -1,0 +1,16 @@
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    list-style: none;
+    
+    a{
+        color: var(--primary-background);
+        text-decoration: none;
+    }
+
+    a.active, a:hover{
+        color: var(--primary-active);
+    }
+}
