@@ -1,0 +1,56 @@
+{
+  "camisetas": [
+    {
+      "id": "CAM001",
+      "nombre": "Camiseta Local FC Barcelona 2024/25",
+      "talla": "M",
+      "liga": "La Liga",
+      "equipo": "FC Barcelona"
+    },
+    {
+      "id": "CAM002",
+      "nombre": "Camiseta Visitante Real Madrid 2024/25",
+      "talla": "L",
+      "liga": "La Liga",
+      "equipo": "Real Madrid"
+    },
+    {
+      "id": "CAM003",
+      "nombre": "Camiseta Local Manchester United 2024/25",
+      "talla": "S",
+      "liga": "Premier League",
+      "equipo": "Manchester United"
+    },
+    {
+      "id": "CAM004",
+      "nombre": "Camiseta Local PSG 2024/25",
+      "talla": "XL",
+      "liga": "Ligue 1",
+      "equipo": "Paris Saint-Germain"
+    },
+    {
+      "id": "CAM005",
+      "nombre": "Camiseta Selección Argentina 2024",
+      "talla": "M",
+      "liga": "Internacional",
+      "equipo": "Argentina"
+    }
+  ],
+  "cajas_sorpresa": [
+    {
+      "id": "BOX001",
+      "nombre": "Caja Sorpresa Europa 2024",
+      "coleccion": "Clubes Europeos"
+    },
+    {
+      "id": "BOX002",
+      "nombre": "Caja Sorpresa Mundial 2024",
+      "coleccion": "Selecciones Nacionales"
+    },
+    {
+      "id": "BOX003",
+      "nombre": "Caja Sorpresa Retro",
+      "coleccion": "Históricas 1990-2010"
+    }
+  ]
+}
