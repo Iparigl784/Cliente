@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-color: #D11A30;
+  --white-color: #FEFFFF;
+  --black-color: #1B1B1B;
+  --gray-color: #d9d9d9;
+  --price-color: #ffd700;
+
+  --light-gray: #fbfbfb;
+  --light-red: #fae8ea;
+
+  --dark-primary: #9d1424;
+  --border-color: #444444;
+
+  --primary-hover: #bc172b;
+  --dark-hover: #7d101d;
+  --light-red-hover: #FF6B81;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Cambiar color de fondo de los toasts */
+.Toastify__toast--success {
+  background: var(--black-color) !important; /* verde personalizado */
+  color: var(--white-color) !important;
+}
+
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: var(--primary-color) !important; /* Color del icono */
+}
+
+.Toastify__progress-bar--success {
+  background: var(--primary-color) !important; /* Verde más oscuro, opcional */
+}
+
+.Toastify__toast--error {
+  background: var(--light-red) !important; /* rojo personalizado */
+  color: var(--black-color) !important;
+}
+
+.Toastify__toast--error .Toastify__toast-icon svg {
+  fill: var(--black-color) !important; /* Color del icono */
+}
+
+.Toastify__progress-bar--error {
+  background: var(--black-color) !important; /* Verde más oscuro, opcional */
+}

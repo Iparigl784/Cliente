@@ -1,0 +1,52 @@
+/* Card */
+.card {
+  background: var(--white-color);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 450px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  h3 {
+    margin: 12px 0 6px;
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    /* sombra más intensa al hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* CardInfo */
+.cardInfo {
+  height: 20%;
+  background-color: #f1f1f1;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--border-color);
+  }
+
+  .price {
+    align-items: flex-start;
+    color: var(--dark-primary);
+    font-size: 1.1rem;
+  }
+}

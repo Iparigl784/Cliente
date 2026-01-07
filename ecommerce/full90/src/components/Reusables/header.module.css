@@ -1,0 +1,152 @@
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra opcional para resaltar */
+}
+
+/* ICONOS */
+.header svg {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+/* FILA SUPERIOR */
+.div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  width: 100%;
+}
+
+/* BUSQUEDA */
+.busquedaContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.logoContainer img {
+  height: 125px;
+  cursor: pointer;
+}
+
+/* ICONOS USUARIO */
+.adminContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ===== MENU HAMBURGUESA ===== */
+.menuMobile {
+  display: none;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+}
+
+.navContainer {
+  background-color: var(--black-color);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navContainer a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.navContainer span {
+  color: var(--border-color);
+}
+
+body main, .contenido-principal {
+  padding-top: 165px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  body main, .contenido-principal {
+    padding-top: 60px;
+  }
+
+  .div {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .menuMobile {
+    display: flex;
+    order: 1;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .busquedaContainer {
+    order: 2;
+  }
+
+  .logoContainer {
+    order: 3;
+    margin: 0 auto;
+  }
+
+  .logoContainer img {
+    height: 60px;
+  }
+
+  .adminContainer {
+    order: 4;
+  }
+
+  .header svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navAbierto {
+    display: block;
+  }
+
+  .navContainer {
+    height: auto;
+  }
+
+  .navContainer ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .navContainer span {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+/* ===== Card ===== */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: var(--light-gray);
+
+  &:hover {
+    transform: translateY(-8px);
+    /* sombra más intensa al hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+      color: var(--light-red-hover);
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
+
+/* ===== Contenedor de la imagen ===== */
+.cardImageContainer {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/* ===== Contenedor de datos debajo de la imagen ===== */
+.cardOverlay {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  flex-grow: 1;
+  background: rgba(27, 27, 27, 0.85);
+  color: var(--white-color);
+  border-radius: 0 0 10px 10px;
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .price {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--price-color);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}

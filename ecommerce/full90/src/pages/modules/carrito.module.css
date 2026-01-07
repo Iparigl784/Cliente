@@ -1,0 +1,138 @@
+.carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn .3s ease forwards;
+
+    display: flex;
+    flex-direction: column;
+
+    &>[class^="_cards"] {
+        margin-inline: -20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        scrollbar-color: var(--primary-color) var(--white-color);
+        scrollbar-width: thin;
+    }
+
+    .checkout {
+        p {
+            font-size: 16px;
+            font-family: "Archivo-SemiBold", sans-serif;
+            color: var(--black-color);
+            cursor: auto;
+        }
+
+        .button {
+            margin-top: 24px;
+            display: flex;
+            width: 100%;
+
+            button {
+                background-color: var(--primary-color);
+                border: none;
+                cursor: pointer;
+                padding: 8px 12px;
+                font-size: 16px;
+                font-family: "Archivo-Normal", sans-serif;
+                letter-spacing: .1rem;
+                color: var(--white-color);
+
+                display: block;
+                flex: 1;
+
+                &:hover {
+                    background-color: var(--cta-color);
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 16px;
+        font-family: "Archivo-SemiBold", sans-serif;
+    }
+
+    hr {
+        margin: 12px 0px;
+        border: 1px solid var(--black-color);
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .blankState {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+
+        h3 {
+            font-size: 16px;
+            font-family: "Archivo-SemiBold", sans-serif;
+        }
+    }
+
+    p {
+        color: var(--black-active);
+        font-size: 16px;
+        font-family: "Archivo-Light", sans-serif;
+        cursor: pointer;
+        margin: 32px auto;
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.carrito.closing {
+    animation: slideOut 0.3s ease forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.cerrar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .carrito{
+        width: 100%;
+    }
+}

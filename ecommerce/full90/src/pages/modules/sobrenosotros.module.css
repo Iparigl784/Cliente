@@ -1,0 +1,96 @@
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--black-color);
+}
+
+/* Cada sección = fila horizontal */
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Imagen y texto misma proporción */
+.image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Texto */
+.text {
+  width: 50%;
+}
+
+.text h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.text p {
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1.1rem;
+  color: var(--black-color);
+}
+
+/* RESPONSIVE móvil */
+@media (max-width: 768px) {
+  .section,
+  .reverse {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Imagen primero en móviles */
+  .section .image,
+  .reverse .image {
+    order: -1;
+  }
+
+  .image,
+  .text {
+    width: 100%;
+  }
+
+  .text h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+/* Hover en títulos */
+.text h2:hover {
+  color: var(--primary-hover);
+}

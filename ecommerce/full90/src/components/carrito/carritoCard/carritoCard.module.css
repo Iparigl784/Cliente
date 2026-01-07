@@ -1,0 +1,97 @@
+.card {
+    width: 100%;
+    height: 129px;
+    /* border-top: 1.5px solid var(--black-color); */
+    border-bottom: 1.5px solid var(--white-color-hover);
+    margin: 8px 0px;
+
+    display: flex;
+
+    .imagen {
+        width: 106px;
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border-right: 1.5px solid var(--black-color); */
+
+        img {
+            width: 110px;
+            height: 110px;
+        }
+    }
+
+    .info {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+
+        .detalles {
+            width: 160px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .cantidad {
+                width: 117px;
+                height: 32px;
+                border-top: 1px solid var(--white-color-dark);
+                border-bottom: 1px solid var(--white-color-dark);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h3{
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Archivo-Normal", sans-serif;
+                    color: var(--white-color-dark);
+                }
+                
+                .contador{
+                    width: 35px;
+                    height: 32px;
+                    border: 1px solid var(--white-color-dark);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    color: var(--white-color-dark);
+                }
+            }
+        }
+
+        h2 {
+            font-family: "Archivo-SemiBold", sans-serif;
+            font-size: 16px;
+        }
+
+        h4 {
+            color: var(--white-color-dark);
+            font-family: "Archivo-Light", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .extras {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-between;
+
+            .cerrar {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 22px;
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
+        }
+
+    }
+}

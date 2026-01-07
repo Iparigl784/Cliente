@@ -1,0 +1,92 @@
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 20px 0;
+  transition: height 0.25s ease, padding 0.25s ease;
+}
+
+.acordeonContainer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Primera fila: 3 columnas */
+.footerPrincipal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px;
+  justify-items: center;
+}
+
+.listaEnlaces {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+  align-items: center;
+
+  a {
+    color: var(--white-color);
+  }
+
+  svg{
+    color: var(--white-color);
+  }
+}
+
+.listaTienda {
+  list-style-type: none;
+
+  li {
+    a {
+      font-family: system-ui;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #f1b8bf;
+      padding-left: 30px;
+    }
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  img {
+    height: 125px;
+    width: auto;
+  }
+}
+
+.sociales {
+  display: flex;
+  justify-content: space-around;
+
+  svg {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+}
+
+/* Segunda fila */
+.footerSecundario {
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
